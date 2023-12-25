@@ -1,6 +1,15 @@
 import Post from '../../components/Post';
 
 
+export async function generateMetadata({params, searchParams}) {
+    const post = await fetchData(params.id)
+    return {
+        title: post.title,
+        description: post.body
+    }
+}
+
+
 async function fetchData(id) {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + id);
     const result = await res.json();
