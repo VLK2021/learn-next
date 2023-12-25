@@ -9,7 +9,6 @@ export async function generateMetadata({params, searchParams}) {
     }
 }
 
-
 async function fetchData(id) {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + id);
     const result = await res.json();
