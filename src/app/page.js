@@ -1,9 +1,11 @@
-import styles from './page.module.css'
+import Link from "next/link";
 
-export default function Home() {
+export default function Client() {
   return (
-    <main className={styles.main}>
+    <main>
       my first next
+
+        <Link href={'/client'}>Client</Link>
     </main>
   )
 }
