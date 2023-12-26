@@ -1,8 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: midnightblue;
+}
 
+a:hover {
+    color: yellow;
+    font-style: italic;
+    text-decoration: underline;
+}
 
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 100vh;
+    background: black;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
