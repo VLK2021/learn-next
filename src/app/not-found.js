@@ -3,7 +3,8 @@ import Link from "next/link";
 import './globals.css';
 
 
-export default function NotFoundPage () {
+const NotFoundPage = () => {
+
     return (
         <div className={'not-found-page'}>
             <h1>Ups.....</h1>
@@ -12,3 +13,5 @@ export default function NotFoundPage () {
         </div>
     )
 }
+
+export default NotFoundPage;
